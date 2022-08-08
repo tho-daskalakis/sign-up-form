@@ -9,8 +9,72 @@
 </head>
 <body>
     <div id="container">
-        <div id="img"></div>
-        <div id="form"></div>
+        <div id="img">
+            <figure>
+                <img src="images/frida-lannerstrom-UbodM5xQ3Qc-unsplash.jpg" 
+                alt="Seagulls flying over a rocky beach.">
+                <figcaption>Photo by 
+                    <a href="https://unsplash.com/@fridooh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Frida Lannerström</a> on 
+                    <a href="https://unsplash.com/images/apps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="form">
+            <div id="form-header" class="bold">
+                This is not a real online service! You know you need 
+                something like this in your life to help you realize your 
+                deepest dreams. Sign up <em>now</em> to get started.
+                <br>
+                <br>You <em>know</em> you want to.
+            </div>
+            <div id="form-container">
+                <form method="post" action="">
+                    <div id="name">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" 
+                        placeholder="John" autocomplete="name" required>    
+                    </div>
+                    <div id="surname">
+                        <label for="surname">Surname*</label>
+                        <input type="text" id="surname" name="surname" 
+                        placeholder="Doe" autocomplete="family-name" required>
+                    </div>
+                    <div id="email">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" 
+                        placeholder="example@email.com" autocomplete="email" 
+                        required>
+                    </div>
+                    <div id="phone">
+                        <label for="tel">Phone</label>
+                        <input type="tel" id="tel" name="tel" 
+                        placeholder="1234567890" autocomplete="tel" required>
+                    </div>
+                    <div id="pw">
+                        <label for="pw">Password*</label>
+                        <input type="password" id="pw" name="pw" 
+                        minlength="8" maxlength="16" 
+                        placeholder="8-16 characters" 
+                        autocomplete="new-password" 
+                        required>
+                    </div>
+                    <div id="pw-cnfrm">
+                        <label for="pw-cnfrm">Confirm password*</label>
+                        <input type="password" id="pw-cnfrm" name="pw-cnfrm" 
+                        minlength="8" maxlength="16" 
+                        required>
+                    </div>
+                    <div id="submit">
+                        <button type="submit">Create Account</button>
+                    </div>
+                </form>
+            </div>
+            <div id="sign-in">
+                Already have an account? <a href="#">Sign in</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

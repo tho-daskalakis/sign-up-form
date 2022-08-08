@@ -1,23 +1,97 @@
-:root {
-    font-size: 16px;
-}
-
 body {
-    margin: 0%;
+    margin: 0px;
+    height: 100vh;
 }
 
 #container {
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    margin: 0%;
     background-color: seagreen;
+    height: 100%;
 }
 
 #img {
-    position: fixed;
-    z-index: 0;
+    width: min(960px, 40%);
+    flex: 1 0 auto;
 }
 
-#form {
-    position: fixed;
-    z-index: 1;
+#img img {
+    border: solid 1px yellow;
+    border-radius: 1%;
+    width: min(580px, 100%);
+    height: auto;
+}
+
+#img figcaption {
+    padding: 4px;
+    width: fit-content;
+}
+
+#img figcaption:hover {
+    background-color: violet;
+}
+
+div#form {
+    background-color: white;
+    padding: 20px;
+    padding-left: max(20px, 5%);
+    display: flex;
+    flex-direction: column;
+}
+
+#form form {
+    border: solid 1px lightgray;
+    margin: 3%;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 2%;
+}
+
+#form-container {
+    height: fit-content;
+}
+
+.bold {
+    padding: 20px 5px 5px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form div {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+form input {
+    font-size: large;
+    width: 60%;
+}
+
+form input:focus {
+    border: 1px solid dodgerblue;
+}
+
+#submit {
+    width: 20%;
+}
+
+#submit button {
+    font-size: large;
+    padding: 10px 20px;
+    border: transparent 0px;
+    background-color: forestgreen;
+    color: azure;
+}
+
+#submit button:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#sign-in {
+    margin-left: 3%;
+    padding-left: 20px;
+    font-size: medium;
 }
