@@ -31,40 +31,42 @@
             </div>
             <div id="form-container">
                 <form method="post" action="">
+                    <legend class="bold">Sign-up here:</legend>
                     <div id="name">
                         <label for="name">Name*</label>
                         <input type="text" id="name" name="name" 
-                        placeholder="John" autocomplete="name" required>    
+                        placeholder="John" required autocomplete="given-name">    
                     </div>
                     <div id="surname">
                         <label for="surname">Surname*</label>
                         <input type="text" id="surname" name="surname" 
-                        placeholder="Doe" autocomplete="family-name" required>
+                        placeholder="Doe" required autocomplete="family-name">
                     </div>
                     <div id="email">
                         <label for="email">Email*</label>
                         <input type="email" id="email" name="email" 
-                        placeholder="example@email.com" autocomplete="email" 
-                        required>
+                        placeholder="example@email.com" 
+                        required autocomplete="email">
                     </div>
                     <div id="phone">
                         <label for="tel">Phone</label>
                         <input type="tel" id="tel" name="tel" 
-                        placeholder="1234567890" autocomplete="tel" required>
+                        placeholder="1234567890" required 
+                        autocomplete="tel-national">
                     </div>
                     <div id="pw">
                         <label for="pw">Password*</label>
                         <input type="password" id="pw" name="pw" 
                         minlength="8" maxlength="16" 
                         placeholder="8-16 characters" 
-                        autocomplete="new-password" 
-                        required>
+                        required autocomplete="new-password">
                     </div>
                     <div id="pw-cnfrm">
                         <label for="pw-cnfrm">Confirm password*</label>
                         <input type="password" id="pw-cnfrm" name="pw-cnfrm" 
                         minlength="8" maxlength="16" 
-                        required>
+                        placeholder="Confirm your password"
+                        required autocomplete="new-password">
                     </div>
                     <div id="submit">
                         <button type="submit">Create Account</button>
