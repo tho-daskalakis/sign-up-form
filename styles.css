@@ -70,7 +70,8 @@ form input {
 }
 
 form input:focus {
-    border: 1px solid dodgerblue;
+    border: 2px solid dodgerblue;
+    box-shadow: aquamarine;
 }
 
 #submit {
